@@ -1,19 +1,60 @@
-.syf-ort{       /* Sayfada Ortalama*/
+/* Başlığa oluşturduğum Attribute */
+h1[my-attribute="sayfa-basligi"] {
+    text-align: center;
+    color: chocolate;
+}
+
+/* Sayfada Ortalama*/
+.syf-ort {
     text-align: center;
 }
 
-h1{
+h1 {
     color: rgb(83, 27, 27);
+    font-size: 60px;
 }
 
-h2{
+h2 {
     color: crimson;
+    font-size: 40px;
 }
 
-h3{
+h3 {
     color: rgb(33, 89, 89);
+    font-size: 30px;
 }
 
-.sol-bosluk{
+.sol-bosluk {
     margin-left: 47%;
+}
+
+#urunler-liste {
+    list-style-position: inside;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.basa-don {
+    font-size: 40px;
+    border: 2px brown;
+    border-radius: 10px;
+    background-color: brown;
+    width: 300px;
+    text-align: center;
+    margin:0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.hakkimizda-paragraf-duzeni{
+    text-align: left;
 }

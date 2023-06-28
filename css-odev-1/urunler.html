@@ -1,15 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Müzik Dükkanım | Ürünler</title>
+    <title>Ürünler | Müzik Dükkanım</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-</body>
+    
 
-</html>
+        <!-- BURADA BOŞ BİR SPAN OLUŞTURUP ONU LİNK OLARAK KULLANDIM -->
+        <span id="urunler-basa-don"></span>>
+
+
+
+    <!-- *************** SAYFA BAŞLIĞI ***************  -->
+    <header>
+        <h1 my-attribute="sayfa-basligi">Müzik Dükkanım</h1>
+    </header>
+
+    <!-- *************** RESİM MAP İLE LİNK ***************  -->
+    <nav class="syf-ort">
+
+        <!-- *************** Figur kullanarak resim bölümü oluşturma ***************  -->
+        <figure>
+
+            <img src="img/1.jpg" alt="Link Yönlendirmek İçin Resim" usemap="#yonlendirme" height="100" width="650">
+
+            <!-- Figcaption ile resime başlık ekleme -->
+            <figcaption>Paint ile çizilmiş basit bir resim :))</figcaption>
+
+            <!-- HTML Map elementi ile resim üzerindeki belirli bölgelere tıklanınca link e yönlendirme -->
+            <map name="yonlendirme">
+                <area shape="rect" coords="148,65,252,38" alt="Anasayfa" href="index.html">
+                <area shape="rect" coords="298,65,402,38" alt="Hakkımızda" href="hakkimizda.html">
+                <area shape="rect" coords="448,65,552,38" alt="Ürünler" href="urunler.html">
+            </map>
+
+        </figure>
+
+        <article>
+
+            <!-- ****************** ÜRÜN LİSTESİ ********************** -->
+            <h2>Ürünlerimiz</h2>
+            <ol id="urunler-liste">
+                <li>
+                    <img src="img/davul.jpg" alt="Davul">
+                    <p>
+                        Davul :<b> 1000 TL</b>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/gitar.jpg" alt="Gitar">
+                    <p>
+                        Gitar : <b> 2000 TL</b>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/piyano.jpg" alt="Piyano">
+                    <p>
+                        Piyano : <b> 8000 TL</b>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/keman.jpg" alt="Keman">
+                    <p>
+                        Keman : <b> 4000 TL</b>
+                    </p>
+                </li>
+
+            </ol>
+        </article>
+    </nav>
+
+    <footer class="basa-don">
+        <a href="#urunler-basa-don">BAŞA DÖN</a>
+    </footer>
